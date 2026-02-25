@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Student Financial Management",
+    "description": "A robust financial management system designed for students to track expenses, manage budgets, and plan savings effectively",
+    "techStack": [
+      "C"
+    ],
+    "features": [
+      "Clean Architecture",
+      "State Management",
+      "Performance Optimization"
+    ],
+    "category": "Education",
+    "image": "/assets/projects/placeholder-1.png",
+    "nda": true
+  },
+  {
+    "id": 2,
+    "title": "Website Shortener Url",
+    "description": "Comprehensive platform for URL shortening, analytics, and management",
+    "techStack": [
+      "Node.js",
+      "React",
+      "REST API"
+    ],
+    "features": [
+      "User Authentication",
+      "URL Analytics Dashboard",
+      "Custom Short URLs"
+    ],
+    "category": "E-commerce",
+    "image": "/assets/projects/placeholder-2.png",
+    "nda": true
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "languages": [
+    { "name": "Dart", "proficiency": 50, "icon": "dart" },
+    { "name": "C++", "proficiency": 50, "icon": "cpp" },
+    { "name": "C", "proficiency": 60, "icon": "c" },
+    { "name": "JavaScript", "proficiency": 50, "icon": "javascript" },
+    { "name": "Java", "proficiency": 40, "icon": "java" },
+    { "name": "Python", "proficiency": 40, "icon": "python" }
+  ],
+  "frameworks": [
+    { "name": "Flutter", "proficiency": 40, "icon": "flutter" },
+    { "name": "Vue", "proficiency": 40, "icon": "vue" }
+  ],
+  "concepts": [
+    { "name": "REST API", "proficiency": 40, "icon": "api" },
+    { "name": "Clean Architecture", "proficiency": 60, "icon": "architecture" },
+    { "name": "State Management", "proficiency": 50, "icon": "state" },
+    { "name": "Performance Optimization", "proficiency": 40, "icon": "performance" }
+  ]
+}

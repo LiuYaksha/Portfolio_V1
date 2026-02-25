@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Master of Ceremony - Education Fair 2024",
+    "company": "SMA Mardi Yuana Kota Sukabumi",
+    "period": "2024",
+    "location": "Sukabumi, Indonesia",
+    "current": false,
+    "responsibilities": [
+      "Engaged the audience with a lively and interactive hosting style, ensuring a smooth flow of the event",
+      "Introduced speakers and performers, providing context and background to enhance audience understanding",
+      "Facilitated Q&A sessions, encouraging audience participation and fostering a dynamic atmosphere"
+    ],
+    "logo": "/assets/orgs/education-fair.png"
+  },
+  {
+    "title": "Secretary - Mooncake Festival 2022",
+    "company": "Vihara Widhis Sakti Kota Sukabumi",
+    "period": "2022",
+    "location": "Sukabumi, Indonesia",
+    "current": false,
+    "responsibilities": [
+      "Manage events with a total of more than 300 invitations, and sign invitations for other organizations",
+      "Coordinated communication among event organizers, volunteers, and participants to ensure everyone was informed and aligned with event plans",
+      "Assisted in the logistical planning of the festival, contributing to the successful execution of the event and ensuring a memorable experience for attendees"
+    ],
+    "logo": "/assets/orgs/mooncake-festival.png"
+  }
+]

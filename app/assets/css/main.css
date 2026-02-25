@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-bg-primary text-text-primary font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom Scrollbar — Dark */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bg-primary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+}
+
+/* =============================================
+   ANIMATED MESH GRADIENT BACKGROUND
+   ============================================= */
+.mesh-gradient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.mesh-gradient-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 85% 70%, rgba(139, 92, 246, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 50% at 50% 90%, rgba(6, 182, 212, 0.08) 0%, transparent 60%);
+}
+
+.mesh-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  will-change: transform;
+}
+
+.mesh-blob--indigo {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%);
+  top: -10%;
+  left: -5%;
+  animation: mesh-blob-1 25s ease-in-out infinite;
+}
+
+.mesh-blob--violet {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.20) 0%, transparent 70%);
+  top: 40%;
+  right: -10%;
+  animation: mesh-blob-2 30s ease-in-out infinite;
+}
+
+.mesh-blob--cyan {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+  bottom: -5%;
+  left: 30%;
+  animation: mesh-blob-3 20s ease-in-out infinite;
+}
+
+/* Noise overlay for texture */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+@keyframes mesh-blob-1 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  25% { transform: translate(20%, -15%) scale(1.1); }
+  50% { transform: translate(-10%, 20%) scale(0.95); }
+  75% { transform: translate(-20%, -10%) scale(1.05); }
+}
+
+@keyframes mesh-blob-2 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  25% { transform: translate(-25%, 15%) scale(1.05); }
+  50% { transform: translate(15%, -20%) scale(1.1); }
+  75% { transform: translate(10%, 10%) scale(0.95); }
+}
+
+@keyframes mesh-blob-3 {
+  0%, 100% { transform: translate(0%, 0%) scale(1); }
+  25% { transform: translate(15%, 20%) scale(0.95); }
+  50% { transform: translate(-20%, -10%) scale(1.1); }
+  75% { transform: translate(25%, -15%) scale(1.05); }
+}
+
+@layer components {
+  /* =============================================
+     GLASSMORPHISM — DARK
+     ============================================= */
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06];
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl p-6 shadow-card transition-all duration-500;
+  }
+
+  .glass-card:hover {
+    @apply bg-white/[0.06] border-white/[0.12] shadow-card-hover;
+    transform: translateY(-2px);
+  }
+
+  /* =============================================
+     GRADIENT TEXT
+     ============================================= */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+    background-size: 200% auto;
+    animation: gradient 8s linear infinite;
+  }
+
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* =============================================
+     BUTTONS
+     ============================================= */
+  .btn-glow {
+    @apply relative px-8 py-3 rounded-full font-semibold text-white;
+    @apply bg-gradient-to-r from-primary to-secondary;
+    @apply shadow-glow hover:shadow-glow-lg;
+    @apply transition-all duration-300;
+    @apply hover:scale-[1.03] active:scale-[0.97];
+  }
+
+  .btn-outline-glow {
+    @apply relative px-8 py-3 rounded-full font-semibold;
+    @apply border border-white/[0.12] text-text-primary;
+    @apply hover:bg-white/[0.06] hover:border-primary/40;
+    @apply transition-all duration-300;
+    @apply hover:shadow-glow;
+  }
+
+  /* =============================================
+     SHIMMER
+     ============================================= */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.04) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* =============================================
+     CARD EFFECTS
+     ============================================= */
+  .card-lift {
+    @apply transition-all duration-500;
+  }
+
+  .card-lift:hover {
+    transform: translateY(-4px);
+    @apply shadow-card-hover;
+  }
+
+  /* =============================================
+     LAYOUT
+     ============================================= */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  /* =============================================
+     HEADINGS
+     ============================================= */
+  .heading-1 {
+    @apply text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-bold mb-3 tracking-tight;
+  }
+
+  /* =============================================
+     SCROLL REVEAL ANIMATIONS
+     ============================================= */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered children */
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal-stagger.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+  .reveal-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
+  .reveal-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
+  .reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
+  .reveal-stagger.visible > *:nth-child(5) { transition-delay: 320ms; }
+  .reveal-stagger.visible > *:nth-child(6) { transition-delay: 400ms; }
+  .reveal-stagger.visible > *:nth-child(7) { transition-delay: 480ms; }
+  .reveal-stagger.visible > *:nth-child(8) { transition-delay: 560ms; }
+  .reveal-stagger.visible > *:nth-child(9) { transition-delay: 640ms; }
+
+  /* =============================================
+     DIVIDER
+     ============================================= */
+  .section-divider {
+    @apply border-t border-white/[0.04] my-0;
+  }
+}
+
+@layer utilities {
+  /* Text shadow */
+  .text-shadow {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+  }
+
+  /* 3D */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+/* Page transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Layout transitions */
+.layout-enter-active,
+.layout-leave-active {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.layout-enter-from,
+.layout-leave-to {
+  opacity: 0;
+  filter: blur(6px);
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "degree": "Sarjana Terapan Teknik Informatika",
+    "institution": "Politeknik Negeri Bandung",
+    "period": "2025 – Present",
+    "location": "Bandung, Indonesia",
+    "description": "Currently pursuing degree in Applied Informatics Engineering"
+  },
+  {
+    "degree": "Kurikulum Merdeka",
+    "institution": "SMA Mardi Yuana Kota Sukabumi",
+    "period": "2022 – 2025",
+    "location": "Sukabumi, Indonesia",
+    "description": "Graduated with 5th best score in the school, and actively participated in various extracurricular activities related to computer science"
+  },
+  {
+    "degree": "Kurikulum 2013",
+    "institution": "SMP Yuwati Bhakti Kota Sukabumi",
+    "period": "2019 – 2022",
+    "location": "Sukabumi, Indonesia",
+    "description": "Graduated with 5th best score in the school"
+  },
+  {
+    "degree": "Kurikulum 2013",
+    "institution": "SD Persatuan Kota Sukabumi",
+    "period": "2013 – 2019",
+    "location": "Sukabumi, Indonesia",
+    "description": "Graduated with 1st best score in the school (rank 1 in class 1 to 6)"
+  }
+]

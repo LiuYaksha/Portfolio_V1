@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Leader",
+    "organization": "Mardi Yuana Computer Club",
+    "period": "2024 - 2025",
+    "location": "Sukabumi, Indonesia",
+    "current": false,
+    "responsibilities": [
+      "Contributed in weekly computer club meetings and discussions",
+      "Assisted in organizing programming practice sessions",
+      "Contributed to preparation of presentations and club activities"
+    ],
+    "logo": "/assets/orgs/computer-club-mardi-yuana.png"
+  },
+  {
+    "title": "Secretary of division 4 & 9",
+    "organization": "OSIS SMA Mardi Yuana",
+    "period": "2022 - 2024",
+    "location": "Sukabumi, Indonesia",
+    "current": false,
+    "responsibilities": [
+      "Managed administrative tasks for division 4 (sports) and division 9 (technology)",
+      "Coordinated events and activities for both divisions (e.g., sports tournaments, tech workshops)",
+      "Communicated with students and staff to ensure smooth operations of events",
+      "Contributed to the organization of school events and activities, such as Master of Ceremony in Education Fair and other school events"
+    ],
+    "logo": "/assets/orgs/osis-mardi-yuana.png"
+  },
+  {
+    "title": "Penanggung Jawab Jurusan Teknik Komputer & Informatika",
+    "organization": "Komisi Penyelenggara Pemira Politek Negeri Bandung",
+    "period": "2025",
+    "location": "Bandung, Indonesia",
+    "current": true,
+    "responsibilities": [
+      "Organized and managed the election process for student council at Politeknik Negeri Bandung",
+      "Coordinated with candidates and election committee to ensure a fair and transparent election"
+    ],
+    "logo": "/assets/orgs/tech-community.png"
+  }
+]

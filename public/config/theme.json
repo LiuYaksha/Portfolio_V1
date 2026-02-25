@@ -1,0 +1,51 @@
+{
+  "colors": {
+    "primary": "#2563eb",
+    "secondary": "#1e40af",
+    "accent": "#bfdbfe",
+    "background": {
+      "primary": "#ffffff",
+      "secondary": "#f8fafc",
+      "tertiary": "#f1f5f9"
+    },
+    "text": {
+      "primary": "#0f172a",
+      "secondary": "#475569",
+      "muted": "#6b7280"
+    },
+    "border": "#e5e7eb",
+    "success": "#16a34a",
+    "warning": "#d97706",
+    "error": "#dc2626"
+  },
+  "fonts": {
+    "sans": "Inter",
+    "mono": "JetBrains Mono",
+    "display": "Inter"
+  },
+  "animations": {
+    "enableParticles": true,
+    "enable3D": false,
+    "particleCount": 800,
+    "enableScrollAnimations": true,
+    "enableMicroInteractions": true,
+    "reducedMotion": false
+  },
+  "layout": {
+    "maxWidth": "1280px",
+    "containerPadding": "1.5rem",
+    "sectionSpacing": "6rem"
+  },
+  "effects": {
+    "glassmorphism": {
+      "enabled": true,
+      "blur": "20px",
+      "opacity": 0.08
+    },
+    "glow": {
+      "enabled": true,
+      "color": "#2563eb",
+      "intensity": "subtle"
+    }
+  }
+}

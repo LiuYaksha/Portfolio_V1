@@ -1,0 +1,57 @@
+[
+  {
+    "year": 2025,
+    "title": "Mahasiswa Berprestasi 2025",
+    "organization": "Bandung State Polytechnic",
+    "description": "Selected as one of the 4 Outstanding Students of 2025 as a first semester student",
+    "type": "award",
+    "icon": "trophy",
+    "rank": "Top 4",
+    "assignmentId": 1
+  },
+  {
+    "year": 2025,
+    "title": "Silver Medal - KMIPN Hackathon Challenge",
+    "organization": "Politeknik Negeri Padang",
+    "description": "Won 2nd Place at the National Polytechnic Informatics Student Competition (KMIPN) Hackathon Challenge, leading the top-ranking first-year team",
+    "type": "competition",
+    "icon": "medal-silver",
+    "rank": "2nd Place"
+  },
+  {
+    "year": 2022,
+    "title": "Bronze Medal - E-sport Competition",
+    "organization": "Yayasan Widyabakti Kampus Santa Angela Bandung",
+    "description": "Secured 3rd Place at the E-sport Competition organized by Yayasan Widyabakti Kampus Santa Angela Bandung",
+    "type": "competition",
+    "icon": "medal-bronze",
+    "rank": "3rd Place"
+  },
+    {
+    "year": "2023 - 2024",
+    "title": "Participant - OSNK Informatika 2023",
+    "organization": "Lembaga Olimpiade Pendidikan Indonesia (LOPI)",
+    "description": "Participated in the National High School Informatics Competition (OSNK Informatika) 2023",
+    "type": "competition",
+    "icon": "users",
+    "rank": "Participant"
+  },
+  {
+    "year": 2024,
+    "title": "Honorable Mention - Competition for High School in Informatics and Problem Solving 2024",
+    "organization": "Program Studi Informatika Universitas Katolik Parahyangan",
+    "description": "Received an Honorable Mention at the Competition for High School in Informatics and Problem Solving 2024 organized by Program Studi Informatika Universitas Katolik Parahyangan",
+    "type": "competition",
+    "icon": "star",
+    "rank": "Honorable Mention"
+  },
+  {
+    "year": 2022,
+    "title": "Participant - Asah Terampil Kimia(ASTRA) 2022",
+    "organization": "Universitas Pendidikan Indonesia",
+    "description": "Participated in the National Chemistry Skills Competition (ASTRA) 2022",
+    "type": "competition",
+    "icon": "users",
+    "rank": "Participant"
+  }
+]
