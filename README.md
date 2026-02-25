@@ -1,5 +1,3 @@
-# Kemal Ardian - Portfolio Website
-
 > **State-of-the-art personal portfolio** showcasing full-stack expertise with 3D animations, interactive elements, and modern design.
 
 ## 🚀 Quick Start
@@ -490,7 +488,4 @@ This portfolio is a personal project. Feel free to use as a template but please 
 - **GSAP** - Standard License - [https://greensock.com/](https://greensock.com/)
 - **Tailwind CSS** - MIT License - [https://tailwindcss.com/](https://tailwindcss.com/)
 
----
 
-
-Made with ❤️ by Kemal Ardian
